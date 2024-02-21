@@ -16,7 +16,7 @@ def determine_closest_match(miss_word, correct_words):
         
     max_dist = max(distances)
     for i in range(len(distances)):
-        if distances[i] != -1:
+        if distances[i] > -1:
             return correct_words[i]
 
 
